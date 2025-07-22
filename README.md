@@ -21,7 +21,291 @@
       --gray: #495057;
     }
 
-    /* ... (mantener todos los estilos igual que antes) ... */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--darker);
+      color: var(--light);
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .web-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/silver-scales.png');
+      opacity: 0.05;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(15, 15, 15, 0.9), rgba(30, 30, 30, 0.9));
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(5px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: var(--primary-light);
+      margin: 0;
+      text-shadow: 0 0 10px var(--primary), 0 0 20px rgba(212, 175, 55, 0.5);
+      letter-spacing: 1px;
+    }
+
+    .scientific-name {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin: 0.5rem 0;
+    }
+
+    .danger-label {
+      display: inline-block;
+      background: rgba(244, 164, 96, 0.2);
+      color: var(--warning);
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      border: 1px solid rgba(244, 164, 96, 0.3);
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .info-section {
+      background: rgba(20, 20, 20, 0.7);
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(212, 175, 55, 0.1);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .section-title {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery-item {
+      background: rgba(30, 30, 30, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .gallery-caption {
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .data-card {
+      background: rgba(30, 30, 30, 0.7);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .data-card h3 {
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .data-card p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .map-container {
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #distribution-map {
+      height: 400px;
+      width: 100%;
+    }
+
+    .map-legend {
+      background: rgba(20, 20, 20, 0.8);
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .legend-color {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: var(--primary-light);
+      border-radius: 3px;
+    }
+
+    footer {
+      background: linear-gradient(to top, rgba(15, 15, 15, 0.9), rgba(8, 8, 8, 0.95));
+      color: var(--light);
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      margin-top: 3rem;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.5rem;
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--primary-light);
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .back-button:hover {
+      background: rgba(212, 175, 55, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .back-button i {
+      margin-right: 8px;
+    }
+
+    .footer-bottom {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.6);
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      .scientific-name {
+        font-size: 1rem;
+      }
+      
+      .main-container {
+        padding: 0 1rem;
+      }
+      
+      .info-section {
+        padding: 1.5rem;
+      }
+      
+      .section-title {
+        font-size: 1.5rem;
+      }
+      
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      #distribution-map {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 2rem 1rem 1.5rem;
+      }
+      
+      header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .data-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -116,7 +400,27 @@
       </div>
     </div>
 
-    <!-- ... (resto de las secciones se mantienen igual) ... -->
+    <div class="info-section">
+      <h2 class="section-title">Seda Dorada</h2>
+      <p>La seda producida por <em>Nephila clavipes</em> es notable por su color dorado y sus excepcionales propiedades mecánicas. Es una de las sedas naturales más fuertes conocidas, con una resistencia a la tracción comparable al acero de alto grado, pero mucho más ligera y flexible.</p>
+      
+      <p>La seda dorada tiene múltiples usos potenciales en aplicaciones biomédicas (como suturas quirúrgicas) y en la industria de materiales. Investigadores están estudiando cómo replicar sus propiedades para crear nuevos materiales avanzados.</p>
+      
+      <h3 class="section-title" style="margin-top: 2rem;">Propiedades de la seda</h3>
+      <ul>
+        <li>Resistencia a la tracción: ~1.1 GPa (similar al acero)</li>
+        <li>Elasticidad: Puede estirarse hasta un 40% de su longitud original</li>
+        <li>Color: Amarillo dorado debido a pigmentos carotenoides</li>
+        <li>Producción: Una araña puede producir hasta 150 metros de seda en un día</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h2 class="section-title">Comportamiento</h2>
+      <p>Estas arañas son diurnas y pasan la mayor parte de su tiempo en el centro de sus grandes telarañas orbiculares, que pueden alcanzar más de 1 metro de diámetro. Las hembras son territoriales y pueden permanecer en la misma telaraña durante semanas, reparándola diariamente.</p>
+      
+      <p>Los machos, mucho más pequeños, a menudo comparten la telaraña de una hembra y compiten por la oportunidad de aparearse. Después del apareamiento, la hembra produce un saco de huevos que puede contener cientos de huevos, protegido por una densa capa de seda dorada.</p>
+    </div>
   </div>
 
   <footer>
@@ -149,7 +453,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.info-section, .venom-section').forEach(section => {
+    document.querySelectorAll('.info-section').forEach(section => {
       section.style.opacity = 0;
       section.style.transform = 'translateY(30px)';
       section.style.transition = 'all 0.6s ease';

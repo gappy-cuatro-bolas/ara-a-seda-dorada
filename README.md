@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -57,19 +56,19 @@
       <h2 class="section-title">Galería</h2>
       <div class="gallery">
         <div class="gallery-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nephila_clavipes_by_Line1.jpg/800px-Nephila_clavipes_by_Line1.jpg" alt="Araña de seda dorada en su telaraña">
+          <img src="https://live.staticflickr.com/65535/34031771221_7fb3341952_z.jpg" alt="Araña de seda dorada en su telaraña">
           <div class="gallery-caption">Ejemplar adulto en su característica telaraña</div>
         </div>
         <div class="gallery-item">
-          <img src="https://www.researchgate.net/publication/335575642/figure/fig1/AS:798434735656960@1567358738925/Golden-silk-orb-weaver-Nephila-clavipes-spider-with-prey-in-its-web-The-spider-is.jpg" alt="Detalle de la seda dorada">
+          <img src="https://static.wikia.nocookie.net/reinoanimalia/images/9/9b/800px-Golden_silk_spider_-_Nephila_clavipes.jpg/revision/latest?cb=20181129173654&path-prefix=es" alt="Detalle de la seda dorada">
           <div class="gallery-caption">Detalle de la seda dorada al sol</div>
         </div>
         <div class="gallery-item">
-          <img src="https://bugguide.net/images/raw/L0Q/HRQ/L0QHRQ0L0RZR7RZR1RZR5R0RZR7RZR1R0RZR5R0RZR7RZR1R0RZR5R0RZR7RZR1R0RZR5R0RZR7RZR1R0RZR5R0RZR7RZR1R0RZR5R0RZR7RZR1R0RZ5R.jpg" alt="Comparación hembra y macho">
+          <img src="https://ecuador.inaturalist.org/photos/159133368" alt="Comparación hembra y macho">
           <div class="gallery-caption">Diferencia de tamaño entre hembra (grande) y macho (pequeño)</div>
         </div>
         <div class="gallery-item">
-          <img src="https://live.staticflickr.com/65535/51116590297_0c1c3a3f8b_b.jpg" alt="Araña con presa">
+          <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/202183994/original.jpeg" alt="Araña con presa">
           <div class="gallery-caption">Capturando una mariposa en su telaraña</div>
         </div>
       </div>

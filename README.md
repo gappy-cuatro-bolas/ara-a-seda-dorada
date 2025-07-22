@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -521,7 +520,7 @@
           <div class="gallery-caption">Ejemplar adulto en su característica telaraña</div>
         </div>
         <div class="gallery-item">
-          <img src="https://static.wikia.nocookie.net/reinoanimalia/images/9/9b/800px-Golden_silk_spider_-_Nephila_clavipes.jpg/revision/latest?cb=20181129173654&path-prefix=es" alt="Detalle de la seda dorada">
+          <img src="https://pictureinsect.com/wiki-image/1080/153882149907333148.jpeg" alt="Detalle de la seda dorada">
           <div class="gallery-caption">Detalle de la seda dorada al sol</div>
         </div>
         <div class="gallery-item">
